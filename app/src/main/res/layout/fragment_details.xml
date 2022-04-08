@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_editor_absoluteX="1dp"
+    app:layout_editor_absoluteY="1dp"
+    android:fillViewport="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.MainActivity"
+        android:background="@color/teal_700">
+
+    <ImageView
+        android:id="@+id/det_image"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:scaleType="fitXY"
+        android:paddingHorizontal="10sp"
+        android:paddingVertical="10sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/p" />
+
+    <TextView
+        android:id="@+id/det_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:gravity="center"
+        android:paddingHorizontal="10sp"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/det_image"
+        tools:text="Love Is War" />
+
+    <TextView
+        android:id="@+id/det_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:gravity="start"
+        android:paddingHorizontal="10sp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/det_name"
+        tools:text="Love is war is an intense drama about a husband and wife battling for governorship of Ondo State." />
+
+    <TextView
+        android:id="@+id/det_lang_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:gravity="start"
+        android:paddingHorizontal="10sp"
+        android:text="original language : "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/det_description" />
+
+    <TextView
+        android:id="@+id/det_lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:gravity="start"
+        android:paddingHorizontal="10sp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/det_lang_show"
+        app:layout_constraintTop_toBottomOf="@+id/det_description"
+        tools:text="en" />
+
+    <TextView
+        android:id="@+id/det_date_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:gravity="start"
+        android:paddingHorizontal="10sp"
+        android:text="release date : "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/det_lang" />
+
+    <TextView
+        android:id="@+id/det_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:gravity="start"
+        android:paddingHorizontal="10sp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/det_date_show"
+        app:layout_constraintTop_toBottomOf="@+id/det_lang"
+        tools:text="2019-09-27" />
+
+    <TextView
+        android:id="@+id/det_vot_avg_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:gravity="start"
+        android:paddingHorizontal="10sp"
+        android:text="vote_average : "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/det_date_show" />
+
+    <TextView
+        android:id="@+id/det_vot_avg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:gravity="start"
+        android:paddingHorizontal="5sp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/det_vot_avg_show"
+        app:layout_constraintTop_toBottomOf="@+id/det_date"
+        tools:text="8.4" />
+
+    <TextView
+        android:id="@+id/det_vot_count_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:gravity="start"
+        android:paddingHorizontal="10sp"
+        android:text="vote count : "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/det_vot_avg_show" />
+
+    <TextView
+        android:id="@+id/det_vot_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:gravity="start"
+        android:paddingHorizontal="10sp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/det_vot_count_show"
+        app:layout_constraintTop_toBottomOf="@+id/det_vot_avg_show"
+        tools:text="7829" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:gravity="start"
+            android:paddingHorizontal="10sp"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/det_vot_count"
+            tools:text="" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
